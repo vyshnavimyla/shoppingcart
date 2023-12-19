@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+    .container{
+        /* height: calc(100vh - 10px);
+         */
+         height: 100%;
+        background-color:thistle;
+    }
+    .nav-bar{
+        margin-top: 5px;
+        display: flex;
+        padding: 5px;
+        justify-content: space-between;
+        background-color:slategray;
+        position: relative;
+        top: 5px;
+        margin-left: 2px;
+        margin-right: 2px;
+        border-radius: 5px;
+        align-items: center;
+    }
+    .navbar-text{
+        /* background-color:rgb(248, 232, 1); */
+        color:rgb(214, 223, 234) ;
+        padding: 5px;
+        border-radius:5px ;
+        align-items: center;
+        display: flex;
+        /* height: 30px; */
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .search-input{
+        width: 100%;
+        height: 30px;
+        border: none;
+        padding-left: 5px;
+        border-radius: 5px;
+    }
+    .search-input:focus{
+        border: none;
+        outline: none;
+    }
+    .search-button{
+        cursor: pointer;
+        border: 1px;
+        height: 30px;
+        border-radius: 3px;
+        background-color:rgb(248, 232, 1);
+    }
+    .search-button:active{
+        background-color:rgb(172, 163, 5);
+    }
+    .cart{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px;
+    }
+    .cart-item{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+        /* border-radius: 10px; */
+        align-items: center;
+    }
+    .cart-button{
+        width: fit-content;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <span style="height: 30px;font-size: 30px;">Amazon.com</span>
+            <span style="width: 500px;margin-left: 10%;background-color:unset;"><input class="search-input" type="text" placeholder="Search Products" name="Search"></span><button type="button" class="search-button">Search</button>
+            <span class="navbar-text" style="margin-left:10%;">Home</span>
+            <span class="navbar-text">About</span>
+            <span class="navbar-text">Account</span>
+            <span class="navbar-text">Conatact Us</span>
+        </div>
+<div>
+
+    <div class="cart">
+
+        <div class="cart-item">
+            <img style="border-radius: 20px;" src="assets/14.jpg" width="200px" height="300px">
+            <span>Iphone15</span>
+            <span>price:10000</span>
+            <button class="cart-button" type="button">Add to Cart</button>
+        </div>
+
+        <div class="cart-item">
+            <img style="border-radius: 20px;" src="assets/oneplus.jpeg" width="200px" height="300px">
+            <span>OnePlus 11T</span>
+            <span>price:89000</span>
+            <button class="cart-button" type="button">Add to Cart</button>
+        </div>
+
+        <div class="cart-item">
+            <img style="border-radius: 20px;" src="assets/1+.jpg" width="200px" height="300px">
+            <span>Oneplus 3 Nord</span>
+            <span>price:10000</span>
+            <button class="cart-button" type="button">Add to Cart</button>
+        </div>
+
+        <div class="cart-item">
+            <img style="border-radius: 20px;" src="assets/redmi.jpg" width="200px" height="300px">
+            <span>Redmi Note 6 pro</span>
+            <span>price:13000</span>
+            <button class="cart-button" type="button">Add to Cart</button>
+        </div>
+
+        <div class="cart-item">
+            <img style="border-radius: 20px;" src="assets/9.jpg" width="200px" height="300px">
+            <span>Redmi Note 9 Pro</span>
+            <span>price:13000</span>
+            <button class="cart-button" type="button">Add to Cart</button>
+        </div>
+
+    </div>
+
+
+
+        <div class="cart">
+
+            <div class="cart-item">
+                <img style="border-radius: 20px;" src="assets/oppo.jpeg" width="200px" height="300px">
+                <span>Oppo A30</span>
+                <span>price:17000</span>
+                <button class="cart-button" type="button">Add to Cart</button>
+            </div>
+
+            <div class="cart-item">
+                <img style="border-radius: 20px;" src="assets/nokia.jpg" width="200px" height="300px">
+                <span>Nokia</span>
+                <span>price:15000</span>
+                <button class="cart-button" type="button">Add to Cart</button>
+            </div>
+
+            <div class="cart-item">
+                <img style="border-radius: 20px;" src="assets/vivo.jpg" width="200px" height="300px">
+                <span>Vivo S23</span>
+                <span>price:20000</span>
+                <button class="cart-button" type="button">Add to Cart</button>
+            </div>
+
+            <div class="cart-item">
+                <img style="border-radius: 20px;" src="assets/samsung.jpg" width="200px" height="300px">
+                <span>samsung Galaxy S23</span>
+                <span>price:90000</span>
+                <button class="cart-button" type="button">Add to Cart</button>
+            </div>
+
+            <div class="cart-item">
+                <img style="border-radius: 20px;" src="assets/iphone15.jpg" width="200px" height="300px">
+                <span>Iphone14 pro Max</span>
+                <span>price:100000</span>
+                <button class="cart-button" type="button">Add to Cart</button>
+            </div>
+
+        </div>
+</div>
+
+        
+
+    </div>
+    
+</body>
+</html>
